@@ -1,0 +1,218 @@
+/* ==================== AUTH PAGES ==================== */
+.auth-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 80px);
+  padding: 2rem;
+  background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+}
+
+.auth-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(102, 126, 234, 0.1);
+  padding: 2.5rem;
+  width: 100%;
+  max-width: 450px;
+}
+
+.auth-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.auth-header .auth-icon {
+  font-size: 3rem;
+  color: #6d4c41;
+  margin-bottom: 0.5rem;
+}
+
+.auth-header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #6d4c41;
+}
+
+.auth-header p {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+/* Alerta de error */
+.alert {
+  padding: 1rem 1.25rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+  animation: slideIn 0.3s ease-out;
+}
+
+.alert-error {
+  background-color: #fee;
+  border-left: 4px solid #f44336;
+  color: #c62828;
+}
+
+.alert .material-icons {
+  font-size: 1.5rem;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.input-error {
+  border-color: #f44336 !important;
+  background: #ffebee;
+}
+
+.input-error:focus {
+  box-shadow: 0 0 0 3px rgba(244, 67, 54, 0.1) !important;
+}
+
+.auth-footer {
+  text-align: center;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+.auth-footer p {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.auth-link {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.auth-link:hover {
+  color: #764ba2;
+  text-decoration: underline;
+}
+
+/* ==================== SECCIÓN ADMIN ==================== */
+.admin-section {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+.admin-divider {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.admin-divider span {
+  background: white;
+  padding: 0 1rem;
+  color: #8d6e63;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.admin-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  background: linear-gradient(135deg, #6d4c4115 0%, #8d6e6315 100%);
+  border-radius: 8px;
+  border: 1px solid #d7ccc8;
+}
+
+.admin-info .material-icons {
+  color: #6d4c41;
+  font-size: 1.5rem;
+}
+
+.admin-info p {
+  margin: 0;
+  color: #5d4037;
+  font-size: 0.95rem;
+}
+
+.admin-link {
+  color: #6d4c41;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.admin-link:hover {
+  color: #8d6e63;
+  text-decoration: underline;
+}
+
+/* ==================== ADMIN REGISTER PAGE ==================== */
+.admin-register-card {
+  max-width: 500px;
+}
+
+.admin-header .auth-icon {
+  color: #6d4c41;
+}
+
+.admin-warning {
+  background: #fff3e0;
+  border: 1px solid #ffb74d;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+  color: #e65100;
+}
+
+.admin-warning .material-icons {
+  color: #ff9800;
+  font-size: 1.5rem;
+}
+
+.info-icon {
+  font-size: 1rem;
+  color: #999;
+  cursor: help;
+  margin-left: 0.25rem;
+  vertical-align: middle;
+}
+
+@media (max-width: 640px) {
+  .auth-card {
+    padding: 1.5rem;
+  }
+
+  .auth-header h1 {
+    font-size: 1.75rem;
+  }
+
+  .admin-info {
+    flex-direction: column;
+    text-align: center;
+  }
+}

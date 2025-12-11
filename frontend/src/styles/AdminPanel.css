@@ -1,0 +1,189 @@
+/* ==================== ADMIN PANEL ==================== */
+.admin-panel {
+  padding: 2rem 0;
+}
+
+.admin-panel h1 {
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+.admin-tabs {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.tab-btn {
+  padding: 1rem 1.5rem;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: #999;
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s;
+  margin-bottom: -2px;
+}
+
+.tab-btn:hover {
+  color: #667eea;
+}
+
+.tab-btn.active {
+  color: #667eea;
+  border-bottom-color: #667eea;
+}
+
+.admin-section {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.section-header h2 {
+  margin: 0;
+}
+
+.admin-form {
+  background: #f5f7fa;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.admin-form h3 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+.admin-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+}
+
+.form-actions .btn {
+  flex: 0;
+}
+
+.espacios-table-wrapper {
+  overflow-x: auto;
+}
+
+.espacios-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+}
+
+.espacios-table thead {
+  background: #f5f7fa;
+}
+
+.espacios-table th {
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  color: #333;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.espacios-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+  color: #666;
+}
+
+.espacios-table tbody tr:hover {
+  background: #f9f9f9;
+}
+
+.desc-cell {
+  max-width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.empty-message,
+.info-message {
+  color: #999;
+  font-size: 1.1rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+@media (max-width: 768px) {
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .section-header h2 {
+    width: 100%;
+  }
+
+  .admin-tabs {
+    flex-wrap: wrap;
+  }
+
+  .espacios-table {
+    font-size: 0.9rem;
+  }
+
+  .espacios-table th,
+  .espacios-table td {
+    padding: 0.75rem 0.5rem;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+  }
+
+  .action-buttons .btn {
+    width: 100%;
+  }
+}
+
+/* ==================== ROLE BADGES ==================== */
+.role-badge {
+  display: inline-block;
+  padding: 0.35rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.role-badge.admin {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.role-badge.user {
+  background: #e3f2fd;
+  color: #1976d2;
+}

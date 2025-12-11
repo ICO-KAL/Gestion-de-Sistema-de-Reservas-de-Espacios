@@ -1,0 +1,124 @@
+/* ==================== MIS RESERVAS PAGE ==================== */
+.mis-reservas-page {
+  padding: 2rem 0;
+}
+
+.mis-reservas-page h1 {
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+.reservas-section {
+  margin-bottom: 3rem;
+}
+
+.reservas-section h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.reservas-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.reserva-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border-left: 4px solid #667eea;
+  transition: all 0.3s;
+}
+
+.reserva-card:hover {
+  box-shadow: 0 8px 24px rgba(102, 126, 234, 0.15);
+  transform: translateX(4px);
+}
+
+.reserva-card.pasada {
+  opacity: 0.75;
+  border-left-color: #ccc;
+  background: #f9f9f9;
+}
+
+.reserva-card.proxima {
+  border-left-color: #4caf50;
+}
+
+.reserva-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.reserva-header h3 {
+  margin: 0;
+  flex: 1;
+  font-size: 1.25rem;
+}
+
+.status-badge {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.status-badge.confirmada {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.status-badge.completada {
+  background: #eceff1;
+  color: #455a64;
+}
+
+.reserva-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.reserva-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.detail-label {
+  color: #667eea;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.detail-value {
+  color: #333;
+  font-size: 1rem;
+}
+
+.reserva-card.pasada .detail-value {
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .reserva-content {
+    grid-template-columns: 1fr;
+  }
+
+  .reserva-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .status-badge {
+    align-self: flex-start;
+  }
+}

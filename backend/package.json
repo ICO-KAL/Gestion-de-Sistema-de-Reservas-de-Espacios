@@ -1,0 +1,32 @@
+{
+  "name": "spacebooker-backend",
+  "version": "1.0.0",
+  "description": "SpaceBooker: Sistema Integral para la Gestión de Reservas de Espacios - Backend",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "node src/index.js",
+    "start": "node src/index.js",
+    "test": "jest --detectOpenHandles --forceExit --no-coverage",
+    "test:watch": "jest --watch"
+  },
+  "keywords": [
+    "spacebooker",
+    "reservas",
+    "espacios"
+  ],
+  "author": "Isaac Concepcion Peralta - 2023-1932",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mysql2": "^3.6.5"
+  },
+  "devDependencies": {
+    "jest": "^30.2.0",
+    "nodemon": "^3.0.2"
+  }
+}

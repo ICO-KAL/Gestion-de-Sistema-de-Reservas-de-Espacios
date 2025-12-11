@@ -1,0 +1,116 @@
+/* ==================== PERFIL PAGE ==================== */
+.perfil-page {
+  padding: 2rem 0;
+}
+
+.perfil-page h1 {
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+.perfil-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.perfil-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.info-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.info-item label {
+  font-weight: 600;
+  color: #333;
+}
+
+.info-item span {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.role-badge {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.role-badge.role-admin {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.role-badge.role-user {
+  background: #e2f0ff;
+  color: #004085;
+}
+
+.perfil-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.perfil-form h2 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.perfil-form h3 {
+  margin: 1rem 0;
+  font-size: 1.1rem;
+  color: #667eea;
+}
+
+.form-divider {
+  border: none;
+  border-top: 1px solid #e0e0e0;
+  margin: 1rem 0;
+}
+
+.form-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+  margin-top: 1rem;
+}
+
+.form-actions .btn {
+  flex: 0;
+}
+
+@media (max-width: 640px) {
+  .perfil-card {
+    padding: 1.5rem;
+  }
+
+  .info-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .form-actions {
+    flex-direction: column;
+  }
+
+  .form-actions .btn {
+    width: 100%;
+  }
+}
