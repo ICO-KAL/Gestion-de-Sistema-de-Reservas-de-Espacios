@@ -483,20 +483,6 @@ INDEX idx_usuario_email (email)
 
 ---
 
-## 🤝 Contribución
-
-Este proyecto fue desarrollado como proyecto final individual. Sin embargo, se siguieron las mejores prácticas de:
-- Commits atómicos y descriptivos
-- Versionamiento semántico
-- Documentación exhaustiva
-- Pruebas unitarias
-- Code review (autoevaluación)
-
----
-
-## 📝 Licencia
-
-ISC - Proyecto Académico
 
 ---
 
@@ -504,10 +490,6 @@ ISC - Proyecto Académico
 
 **Isaac Concepcion Peralta**
 - Matrícula: 2023-1932
-- Email: isaac.concepcion@example.com
-- Universidad: [Nombre Universidad]
-- Carrera: Ingeniería de Software
-
 ---
 
 ## 🙏 Agradecimientos
@@ -524,14 +506,3 @@ ISC - Proyecto Académico
 
 ---
 
-## 📞 Soporte
-
-Para preguntas o problemas:
-1. Revisar la documentación en `/backend` y `/frontend`
-2. Verificar los archivos `.env` estén configurados
-3. Consultar los logs en la terminal
-4. Revisar la colección de Postman
-
----
-
-**⭐ Nota Final:** Este proyecto cumple con el **100% de los requerimientos** establecidos en la metodología Scrum, incluyendo todas las épicas, historias de usuario y requisitos funcionales/no funcionales. La implementación del calendario visual interactivo (HU17) completa la ÉPICA 4, alcanzando la meta de un MVP totalmente funcional y listo para producción.
